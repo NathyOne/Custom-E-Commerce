@@ -1,9 +1,12 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const apiSlice = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({ 
-    baseUrl: 'http://localhost:8000/api/',
+    baseUrl: process.env.API_URL,
   }),
   tagTypes: ['Products', 'Categories', 'Orders'],
   endpoints: (builder) => ({

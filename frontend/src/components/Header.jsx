@@ -16,8 +16,8 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <span className="logo-icon">🚀</span>
-          <span className="logo-text">ShopHub</span>
+          <span className="logo-icon">|_|</span>
+          <span className="logo-text">Silkroot</span>
         </Link>
         
         <nav className="nav">

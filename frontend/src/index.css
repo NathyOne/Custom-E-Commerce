@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
 @import './colors.css';
+@import "tailwindcss";
 
+/* Luxury typography helpers */
+:root{
+  --font-main: var(--font-main);
+  --font-heading: var(--font-heading);
+}
+
+/* Preserve existing global rules while enabling Tailwind utilities */
 body {
   margin: 0;
   font-family: var(--font-main);
@@ -31,7 +40,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #c7511f;
+  color: var(--link-color);
 }
 
 button {
@@ -41,4 +50,37 @@ button {
 
 h1, h2, h3, h4 {
   color: var(--text-dark);
+  font-family: var(--font-heading);
+}
+
+/* Gold pill button */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .6rem 1.4rem;
+  border-radius: 9999px;
+  background: var(--button-primary);
+  color: var(--button-text-dark);
+  font-weight: 600;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.btn-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--gold-glow);
+  background: var(--button-hover);
+}
+
+/* Gold outline */
+.btn-pill-outline {
+  background: transparent;
+  border: 1px solid rgba(212,175,55,0.2);
+  color: var(--text-dark);
+}
+
+/* Helper for image pop on cards */
+.img-pop {
+  box-shadow: var(--shadow-card);
+  border-radius: .5rem;
 }

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useGetProductsQuery, useGetCategoriesQuery } from '../features/api/apiSlice';
 import ProductCard from './ProductCard';
-import './ProductList.css';
 
 function ProductList() {
   const { t } = useTranslation();
@@ -25,22 +24,22 @@ function ProductList() {
   if (error) return <div className="error-message">Error loading products</div>;
 
   return (
-    <div className="product-list-container">
-      <div className="filters-sidebar">
-        <div className="search-box">
+    <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <aside className="lg:col-span-1 bg-white p-4 rounded shadow-sm">
+        <div className="mb-4">
           <input
             type="text"
             placeholder={t('products.search_placeholder')}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="search-input"
+            className="w-full px-3 py-2 border rounded"
           />
         </div>
 
-        <div className="filter-group">
-          <h3>Categories</h3>
-          <button 
-            className={`filter-btn ${!selectedCategory ? 'active' : ''}`}
+        <div className="mb-4">
+          <h3 className="font-semibold mb-2">Categories</h3>
+          <button
+            className={`w-full text-left px-3 py-2 rounded mb-2 ${!selectedCategory ? 'bg-[var(--primary-color)] text-white' : 'bg-white border'}`}
             onClick={() => setSelectedCategory('')}
           >
             {t('products.all_categories')}
@@ -48,21 +47,23 @@ function ProductList() {
           {categories?.map(category => (
             <button
               key={category.id}
-              className={`filter-btn ${selectedCategory === category.slug ? 'active' : ''}`}
+              className={`w-full text-left px-3 py-2 mb-2 rounded ${selectedCategory === category.slug ? 'bg-[var(--primary-color)] text-white' : 'bg-white border'}`}
               onClick={() => setSelectedCategory(category.slug)}
             >
-              {category.name}
-              <span className="count-badge">{category.product_count}</span>
+              <div className="flex justify-between items-center">
+                <span>{category.name}</span>
+                <span className="text-sm text-gray-500">{category.product_count}</span>
+              </div>
             </button>
           ))}
         </div>
 
-        <div className="filter-group">
-          <h3>{t('products.sort_by')}</h3>
-          <select 
-            value={ordering} 
+        <div>
+          <h3 className="font-semibold mb-2">{t('products.sort_by')}</h3>
+          <select
+            value={ordering}
             onChange={(e) => setOrdering(e.target.value)}
-            className="sort-select"
+            className="w-full px-3 py-2 border rounded"
           >
             <option value="-created_at">Newest First</option>
             <option value="price">Price: Low to High</option>
@@ -70,26 +71,26 @@ function ProductList() {
             <option value="name">Name: A-Z</option>
           </select>
         </div>
-      </div>
+      </aside>
 
-      <div className="products-grid-section">
-        <div className="products-header">
-          <h2>{selectedCategory ? `${selectedCategory.replace('-', ' ')}` : t('products.all_categories')}</h2>
-          <span className="products-count">{products.length} items</span>
+      <section className="lg:col-span-3">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-xl font-semibold">{selectedCategory ? `${selectedCategory.replace('-', ' ')}` : t('products.all_categories')}</h2>
+          <span className="text-sm text-gray-500">{products.length} items</span>
         </div>
-        
+
         {products.length > 0 ? (
-          <div className="products-grid">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
         ) : (
-          <div className="no-products">
+          <div className="text-center py-12">
             <p>No products found matching your criteria.</p>
           </div>
         )}
-      </div>
+      </section>
     </div>
   );
 }

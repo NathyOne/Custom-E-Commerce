@@ -1,31 +1,34 @@
 :root {
-  /* Amazon-like Palette */
-  --primary-color: #131921; /* Header Dark Blue */
-  --secondary-color: #232f3e; /* Secondary Dark */
+  /* SilkRoot luxury brand tokens */
+  --obsidian: #0b0b0b; /* Deep Obsidian */
+  --champagne: #D4AF37; /* Soft Champagne Gold */
+  --champagne-dark: #B78E2B;
+  --nude: #F4EDE1; /* Nude Beige */
   
-  --accent-color: #febd69; /* Amazon Orange/Yellow */
-  --button-primary: #ffd814; /* Buy Box Yellow */
-  --button-hover: #f7ca00;
-  --button-secondary: #ffa41c; /* Buy Now Orange */
+  --accent-color: var(--champagne);
+  --button-primary: var(--champagne);
+  --button-hover: var(--champagne-dark);
+  --button-text-dark: #0b0b0b;
+
+  --text-dark: #0b0b0b;
+  --text-muted: #6b6b6b;
+  --link-color: #0b5a5b;
   
-  --text-dark: #0F1111; /* Main Text */
-  --text-light: #565959; /* Secondary Text */
-  --link-color: #007185; /* Link Blue */
-  
-  --background-light: #eaeded; /* Page Background Light Gray */
+  --background-light: var(--nude);
   --white: #ffffff;
   
-  --success: #067D62;
-  --error: #ba0933;
+  --success: #059669;
+  --error: #dc2626;
   
-  --border-light: #d5d9d9;
-  --shadow-card: 0 1px 4px rgba(0,0,0,0.1);
+  --border-light: rgba(11,11,11,0.06);
+  --shadow-card: 0 10px 30px rgba(11,11,11,0.12);
+  --gold-glow: 0 8px 30px rgba(212,175,55,0.12);
   
-  --font-main: "Amazon Ember", Arial, sans-serif;
+  --font-main: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Playfair Display', serif;
   
-  /* Reset futuristic vars to standard to avoid breaking if used */
-  --gradient-primary: linear-gradient(to bottom, #f7fafa, #eaeded); /* Light gradient */
+  --gradient-primary: linear-gradient(90deg, rgba(212,175,55,0.95) 0%, rgba(212,175,55,0.85) 100%); /* subtle gold */
   --background-card: #ffffff;
-  --glass-border: 1px solid #d5d9d9;
-  --glass-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
-}
+  --glass-border: 1px solid rgba(0,0,0,0.06);
+  --glass-shadow: 0 10px 30px rgba(11,11,11,0.08);
+} 

@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { useVerifyPaymentQuery } from '../features/api/apiSlice';
 import { clearCart } from '../features/cart/cartSlice';
-import './PaymentSuccess.css';
 
 function PaymentSuccess() {
   const [searchParams] = useSearchParams();
@@ -51,16 +50,18 @@ function PaymentSuccess() {
   }
 
   return (
-    <div className="success-container">
-      <div className="success-card">
-        <div className="success-icon">🎉</div>
-        <h1>{t('success.title')}</h1>
-        <p>{t('success.message')}</p>
-        <div className="order-details">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="bg-white p-8 rounded shadow-sm text-center max-w-md">
+        <div className="text-6xl">🎉</div>
+        <h1 className="text-2xl font-bold mt-4">{t('success.title')}</h1>
+        <p className="mt-2 text-gray-700">{t('success.message')}</p>
+
+        <div className="mt-4 text-left bg-gray-100 p-4 rounded">
           <p>{t('success.order_number')}: <strong>{data.order_number}</strong></p>
           <p>{t('success.tx_ref')}: <strong>{txRef}</strong></p>
         </div>
-        <Link to="/" className="home-btn">{t('success.continue_shopping')}</Link>
+
+        <Link to="/" className="inline-block mt-4 bg-[var(--accent-color)] px-4 py-2 rounded">{t('success.continue_shopping')}</Link>
       </div>
     </div>
   );

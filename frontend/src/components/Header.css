@@ -1,0 +1,116 @@
+.header {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.logo:hover {
+  border-color: white;
+}
+
+.logo-icon {
+  font-size: 1.8rem; /* Amazon smile-ish icon shape could go here */
+  margin-right: 2px;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  border-color: white;
+  text-decoration: none;
+  color: white;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.lang-select {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.lang-select option {
+  background: white;
+  color: black;
+}
+
+.cart-link {
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.cart-link:hover {
+  border-color: white;
+  color: white;
+  text-decoration: none;
+}
+
+.cart-icon {
+  font-size: 2rem;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-20%);
+  color: #f08804;
+  font-size: 1rem;
+  font-weight: 700;
+}

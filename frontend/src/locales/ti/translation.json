@@ -1,0 +1,42 @@
+{
+  "header": {
+    "home": "ካብ ገጽ",
+    "products": "ምርታት",
+    "cart": "ጋሪ"
+  },
+  "home": {
+    "welcome": "ናብ መጻኢ ዕዳጋ ብደሓን መጻእኩም",
+    "subtitle": "ናይ ዝቕጽል ወለዶ ኢ-ኮሜርስ ተሞክሮ",
+    "shop_now": "ሕጂ ግዝኡ"
+  },
+  "products": {
+    "search_placeholder": "ምርታት ድለ...",
+    "all_categories": "ኩሉ ዓይነታት",
+    "sort_by": "ቅደም ተከተል",
+    "add_to_cart": "ናብ ጋሪ ወስኽ",
+    "out_of_stock": "ብመኽዘን ተወዲኡ",
+    "price": "ዋጋ"
+  },
+  "cart": {
+    "title": "ናይ እትብ ጋሪ",
+    "empty": "ጋሪኹም ባዶ እዩ",
+    "subtotal": "ንኡስ ድምር",
+    "total": "ጠቕላላ",
+    "checkout": "ናብ ክፍሊት ቀጽሉ",
+    "clear": "ጋሪ ኣጽርዩ"
+  },
+  "checkout": {
+    "shipping_info": "ናይ ምልኣኽ ሓበሬታ",
+    "pay_button": "ብ Chapa ይክፈሉ"
+  },
+  "success": {
+    "title": "ክፍሊት ተሳኺዑ!",
+    "message": "ስለዝገዛእኩም የቐንየልና።",
+    "order_number": "ቁጽሪ ትእዛዝ",
+    "tx_ref": "መወኮሲ ግብይት",
+    "continue_shopping": "ግዝኡ ቀጽሉ",
+    "verifying": "ክፍሊት የረጋግጽ ኣሎ...",
+    "failed": "ክፍሊት ምርግጋጽ ኣይተኻእለን",
+    "failed_msg": "ክፍሊትኩም ኣብ ምርግጋጽ ጸገም ኣጋጢሙ።"
+  }
+}

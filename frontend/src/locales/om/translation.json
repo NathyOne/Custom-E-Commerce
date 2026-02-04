@@ -1,0 +1,42 @@
+{
+  "header": {
+    "home": "Fuula Duraa",
+    "products": "Oomishalee",
+    "cart": "Gaarii"
+  },
+  "home": {
+    "welcome": "Baga Gara Gabaa Fuulduraatti Dhuftan",
+    "subtitle": "Muuxannoo e-commerce dhaloota itti aanu",
+    "shop_now": "Amma Bitaa"
+  },
+  "products": {
+    "search_placeholder": "Oomishalee barbaadi...",
+    "all_categories": "Ramaddii Hunda",
+    "sort_by": "Akkaataa",
+    "add_to_cart": "Gaariitti Dabali",
+    "out_of_stock": "Dhumera",
+    "price": "Gatii"
+  },
+  "cart": {
+    "title": "Gaarii Kee",
+    "empty": "Gaariin kee duwwaadha",
+    "subtotal": "Ida'ama Xiqqaa",
+    "total": "Ida'ama Waliigala",
+    "checkout": "Kaffaltii Raawwadhu",
+    "clear": "Gaarii Qulqulleessi"
+  },
+  "checkout": {
+    "shipping_info": "Odeeffannoo Ergaa",
+    "pay_button": "Chapa dhaan kaffali"
+  },
+  "success": {
+    "title": "Kaffaltiin Milkaa'era!",
+    "message": "Waan bittaniif galatoomaa.",
+    "order_number": "Lakkoofsa Ajajaa",
+    "tx_ref": "Wabii Kaffaltii",
+    "continue_shopping": "Bittaa Itti Fufaa",
+    "verifying": "Kaffaltii mirkaneessaa jira...",
+    "failed": "Kaffaltii Mirkaneessuun Hin Danda'amne",
+    "failed_msg": "Kaffaltii keessan mirkaneessuu irratti rakkoon uumameera."
+  }
+}

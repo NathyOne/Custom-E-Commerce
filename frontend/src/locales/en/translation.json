@@ -1,0 +1,42 @@
+{
+  "header": {
+    "home": "Home",
+    "products": "Products",
+    "cart": "Cart"
+  },
+  "home": {
+    "welcome": "Welcome to the Future of Shopping",
+    "subtitle": "Experience the next generation of e-commerce",
+    "shop_now": "Shop Now"
+  },
+  "products": {
+    "search_placeholder": "Search future tech...",
+    "all_categories": "All Categories",
+    "sort_by": "Sort By",
+    "add_to_cart": "Add to Cart",
+    "out_of_stock": "Out of Stock",
+    "price": "Price"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "clear": "Clear Cart"
+  },
+  "checkout": {
+    "shipping_info": "Shipping Information",
+    "pay_button": "Pay with Chapa"
+  },
+  "success": {
+    "title": "Payment Successful!",
+    "message": "Thank you for your purchase.",
+    "order_number": "Order Number",
+    "tx_ref": "Transaction Ref",
+    "continue_shopping": "Continue Shopping",
+    "verifying": "Verifying Payment...",
+    "failed": "Payment Verification Failed",
+    "failed_msg": "There was an issue verifying your payment."
+  }
+}

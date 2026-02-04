@@ -1,0 +1,42 @@
+{
+  "header": {
+    "home": "ዋና ገጽ",
+    "products": "ምርቶች",
+    "cart": "ጋሪ"
+  },
+  "home": {
+    "welcome": "ወደ የወደፊቱ የገበያ ማዕከል እንኳን በደህና መጡ",
+    "subtitle": "የሚቀጥለውን ትውልድ የኢ-ኮሜርስ ተሞክሮ ያግኙ",
+    "shop_now": "አሁን ይግዙ"
+  },
+  "products": {
+    "search_placeholder": "ምርቶችን ይፈልጉ...",
+    "all_categories": "ሁሉም ምድቦች",
+    "sort_by": "ቅደም ተከተል",
+    "add_to_cart": "ወደ ጋሪ ጨምር",
+    "out_of_stock": "በእቃ ቤት የለም",
+    "price": "ዋጋ"
+  },
+  "cart": {
+    "title": "የእርስዎ ጋሪ",
+    "empty": "ጋሪዎ ባዶ ነው",
+    "subtotal": "ንዑስ ድምር",
+    "total": "ጠቅላላ",
+    "checkout": "ወደ ክፍያ ይቀጥሉ",
+    "clear": "ጋሪውን ያጽዱ"
+  },
+  "checkout": {
+    "shipping_info": "የመላኪያ መረጃ",
+    "pay_button": "በ Chapa ይክፈሉ"
+  },
+  "success": {
+    "title": "ክፍያ ተሳክቷል!",
+    "message": "ስለግዢዎ እናመሰግናለን።",
+    "order_number": "የትዕዛዝ ቁጥር",
+    "tx_ref": "የግብይት መለያ",
+    "continue_shopping": "ግዢ ይቀጥሉ",
+    "verifying": "ክፍያ በማጣራት ላይ...",
+    "failed": "ክፍያ ማጣራት አልተሳካም",
+    "failed_msg": "ክፍያዎን በማጣራት ላይ ችግር ነበር።"
+  }
+}

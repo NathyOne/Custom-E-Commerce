@@ -1,0 +1,31 @@
+:root {
+  /* Amazon-like Palette */
+  --primary-color: #131921; /* Header Dark Blue */
+  --secondary-color: #232f3e; /* Secondary Dark */
+  
+  --accent-color: #febd69; /* Amazon Orange/Yellow */
+  --button-primary: #ffd814; /* Buy Box Yellow */
+  --button-hover: #f7ca00;
+  --button-secondary: #ffa41c; /* Buy Now Orange */
+  
+  --text-dark: #0F1111; /* Main Text */
+  --text-light: #565959; /* Secondary Text */
+  --link-color: #007185; /* Link Blue */
+  
+  --background-light: #eaeded; /* Page Background Light Gray */
+  --white: #ffffff;
+  
+  --success: #067D62;
+  --error: #ba0933;
+  
+  --border-light: #d5d9d9;
+  --shadow-card: 0 1px 4px rgba(0,0,0,0.1);
+  
+  --font-main: "Amazon Ember", Arial, sans-serif;
+  
+  /* Reset futuristic vars to standard to avoid breaking if used */
+  --gradient-primary: linear-gradient(to bottom, #f7fafa, #eaeded); /* Light gradient */
+  --background-card: #ffffff;
+  --glass-border: 1px solid #d5d9d9;
+  --glass-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}

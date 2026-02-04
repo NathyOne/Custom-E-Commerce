@@ -1,0 +1,44 @@
+@import './colors.css';
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #c7511f;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-dark);
+}

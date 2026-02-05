@@ -19,8 +19,8 @@ function Header() {
         </Link>
 
         <nav className="hidden md:flex gap-6 text-sm">
-          <Link to="/" className="hover:underline">{t('header.home')}</Link>
-          <Link to="/products" className="hover:underline">{t('header.products')}</Link>
+          <Link to="/" style={{color:'white'}} className="hover:underline text-white">{t('header.home')}</Link>
+          <Link to="/products"style={{color:'white'}}  className="hover:underline text-white">{t('header.products')}</Link>
         </nav>
 
         <div className="flex items-center gap-4">

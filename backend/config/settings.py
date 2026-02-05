@@ -114,7 +114,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-  
+      "https://silkroot.verce.app",  # Your React/Vue frontend
 ]
 
 # REST Framework settings
